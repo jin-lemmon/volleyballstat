@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="player" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">@dimen/player</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart">true</item>
+
+    </style>
+
+    <style name="topBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/TopBarText</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="button" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">@dimen/buttonDim</item>
+        <item name="android:layout_margin">@dimen/buttonSpace</item>
+        <item name="android:layout_height">@dimen/buttonDim</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="playerLayout" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/backPlayer</item>
+        <item name="android:layout_margin">@dimen/playLayPad</item>
+    </style>
+
+
+    <style name="statLayout" parent="Theme.AppCompat.Light.NoActionBar">
+       <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">@dimen/playLayPad</item>
+        <item name="android:paddingEnd">@dimen/statLayPad</item>
+    </style>
+    <style name="statText" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:color">@android:color/black</item>
+        <item name="android:textSize">10sp</item>
+
+    </style>
+
+
+</resources>

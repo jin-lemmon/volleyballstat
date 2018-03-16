@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">kiwi constrictor stats app</string>
+    <string name="setter1">Setter 1</string>
+    <string name="setter2">Setter 2</string>
+    <string name="hitter1">Hitter 1</string>
+    <string name="hitter2">Hitter 2</string>
+    <string name="middle1">Middle 1</string>
+    <string name="middle2">Middle 2</string>
+    <string name="libero">libero</string>
+    <string name="roles">Player</string>
+    <string name="atck">attack</string>
+    <string name="srv">serve</string>
+    <string name="dfns">defense</string>
+    <string name="pass">pass</string>
+    <string name="player">name</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="player">15sp</dimen>
+    <dimen name="namePlayer">80dp</dimen>
+    <dimen name="appPadding">5dp</dimen>
+    <dimen name="TopBarText">18sp</dimen>
+    <dimen name="topBarSpace">1dp</dimen>
+    <dimen name="buttonDim">45dp</dimen>
+    <dimen name="buttonSpace">3dp</dimen>
+    <dimen name="buttonElev">15dp</dimen>
+    <dimen name="playLayPad">3dp</dimen>
+    <dimen name="statLayPad">10dp</dimen>
+    <dimen name="statText">10sp</dimen>
+
+</resources>

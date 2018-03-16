@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="@dimen/appPadding"
+    android:paddingStart="@dimen/appPadding"
+    android:paddingTop="@dimen/appPadding"
+    tools:context="com.example.android.kiwiconstrictorstatsapp.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--setter 1-->
+
+        <RelativeLayout
+            android:id="@+id/setter1"
+            style="@style/playerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/roleSetter1"
+                style="@style/player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/set1point"
+                android:text="@string/setter1" />
+
+
+            <EditText
+                android:id="@+id/setter1Name"
+                style="@style/player"
+                android:layout_below="@id/roleSetter1"
+                android:layout_toStartOf="@id/set1point"
+                android:hint="@string/player" />
+
+
+            <TextView
+                android:id="@+id/set1point"
+                style="@style/statText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/set1srv1"
+                android:gravity="center" />
+
+
+            <ImageButton
+                android:id="@+id/set1srv1"
+                style="@style/button"
+                android:layout_toStartOf="@id/set1atk1"
+                android:background="@color/right"
+                android:onClick="set1srv1"
+                android:src="@drawable/volleysrv" />
+
+            <ImageButton
+                android:id="@+id/set1srv0"
+                style="@style/button"
+                android:layout_below="@id/set1srv1"
+                android:layout_toStartOf="@id/set1atk0"
+                android:background="@color/wrong"
+                android:onClick="set1srv0"
+                android:src="@drawable/volleysrv" />
+
+            <ImageButton
+                android:id="@+id/set1atk1"
+                style="@style/button"
+                android:layout_toStartOf="@id/set1def1"
+                android:background="@color/right"
+                android:onClick="set1atk1"
+                android:src="@drawable/volleyatk" />
+
+            <ImageButton
+                android:id="@+id/set1atk0"
+                style="@style/button"
+                android:layout_below="@id/set1atk1"
+                android:layout_toStartOf="@id/set1def0"
+                android:background="@color/wrong"
+                android:onClick="set1atk0"
+                android:src="@drawable/volleyatk" />
+
+            <ImageButton
+                android:id="@+id/set1def1"
+                style="@style/button"
+                android:layout_toStartOf="@id/set1pas0"
+                android:background="@color/right"
+                android:onClick="set1def1"
+                android:src="@drawable/volleydef" />
+
+            <ImageButton
+                android:id="@+id/set1def0"
+                style="@style/button"
+                android:layout_below="@id/set1def1"
+                android:layout_toStartOf="@id/set1pas0"
+                android:background="@color/wrong"
+                android:onClick="set1def0"
+                android:src="@drawable/volleydef" />
+
+            <ImageButton
+                android:id="@+id/set1pas1"
+                style="@style/button"
+                android:layout_alignParentEnd="true"
+                android:background="@color/right"
+                android:onClick="set1pas1"
+                android:src="@drawable/volleypass" />
+
+            <ImageButton
+                android:id="@+id/set1pas0"
+                style="@style/button"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/set1pas1"
+                android:background="@color/wrong"
+                android:onClick="set1pas0"
+                android:src="@drawable/volleypass" />
+
+        </RelativeLayout>
+
+        <!--hitter 1-->
+
+        <RelativeLayout
+            android:id="@+id/hitter1"
+            style="@style/playerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rolehitter1"
+                style="@style/player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/hit1point"
+                android:text="@string/hitter1"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/hitter1Name"
+                style="@style/player"
+                android:layout_below="@id/rolehitter1"
+                android:layout_marginEnd="@dimen/topBarSpace"
+                android:layout_marginStart="@dimen/topBarSpace"
+                android:layout_toStartOf="@id/hit1point"
+                android:hint="@string/player" />
+
+
+            <TextView
+                android:id="@+id/hit1point"
+                style="@style/statText"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/hit1srv1"
+                android:gravity="center" />
+
+
+            <ImageButton
+                android:id="@+id/hit1srv1"
+                style="@style/button"
+                android:layout_toStartOf="@id/hit1atk1"
+                android:background="@color/right"
+                android:onClick="hit1srv1"
+                android:src="@drawable/volleysrv" />
+
+            <ImageButton
+                android:id="@+id/hit1srv0"
+                style="@style/button"
+                android:layout_below="@id/hit1srv1"
+                android:layout_toStartOf="@id/hit1atk0"
+                android:background="@color/wrong"
+                android:onClick="hit1srv0"
+                android:src="@drawable/volleysrv" />
+
+            <ImageButton
+                android:id="@+id/hit1atk1"
+                style="@style/button"
+                android:layout_toStartOf="@id/hit1def1"
+                android:background="@color/right"
+                android:onClick="hit1atk1"
+                android:src="@drawable/volleyatk" />
+
+            <ImageButton
+                android:id="@+id/hit1atk0"
+                style="@style/button"
+                android:layout_below="@id/hit1atk1"
+                android:layout_toStartOf="@id/hit1def0"
+                android:background="@color/wrong"
+                android:onClick="hit1atk0"
+                android:src="@drawable/volleyatk" />
+
+            <ImageButton
+                android:id="@+id/hit1def1"
+                style="@style/button"
+                android:layout_toStartOf="@id/hit1pas0"
+                android:background="@color/right"
+                android:onClick="hit1def1"
+                android:src="@drawable/volleydef" />
+
+            <ImageButton
+                android:id="@+id/hit1def0"
+                style="@style/button"
+                android:layout_below="@id/hit1def1"
+                android:layout_toStartOf="@id/hit1pas0"
+                android:background="@color/wrong"
+                android:onClick="hit1def0"
+                android:src="@drawable/volleydef" />
+
+            <ImageButton
+                android:id="@+id/hit1pas1"
+                style="@style/button"
+                android:layout_alignParentEnd="true"
+                android:background="@color/right"
+                android:onClick="hit1pas1"
+                android:src="@drawable/volleypass" />
+
+            <ImageButton
+                android:id="@+id/hit1pas0"
+                style="@style/button"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/hit1pas1"
+                android:background="@color/wrong"
+                android:onClick="hit1pas0"
+                android:src="@drawable/volleypass" />
+
+        </RelativeLayout>
+
+        <!--middle 1-->
+
+        <RelativeLayout
+            android:id="@+id/middle1"
+            style="@style/playerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rolemiddle"
+                style="@style/player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/mid1point"
+                android:text="@string/middle1"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/middleName"
+                style="@style/player"
+                android:layout_below="@id/rolemiddle"
+                android:layout_marginEnd="@dimen/topBarSpace"
+                android:layout_marginStart="@dimen/topBarSpace"
+                android:layout_toStartOf="@id/mid1point"
+                android:hint="@string/player" />
+
+
+            <TextView
+                android:id="@+id/mid1point"
+                style="@style/statText"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/mid1srv1"
+                android:gravity="center" />
+
+
+            <ImageButton
+                android:id="@+id/mid1srv1"
+                style="@style/button"
+                android:layout_toStartOf="@id/mid1atk1"
+                android:background="@color/right"
+                android:onClick="mid1srv1"
+                android:src="@drawable/volleysrv" />
+
+            <ImageButton
+                android:id="@+id/mid1srv0"
+                style="@style/button"
+                android:layout_below="@id/mid1srv1"
+                android:layout_toStartOf="@id/mid1atk0"
+                android:background="@color/wrong"
+                android:onClick="mid1srv0"
+                android:src="@drawable/volleysrv" />
+
+            <ImageButton
+                android:id="@+id/mid1atk1"
+                style="@style/button"
+                android:layout_toStartOf="@id/mid1def1"
+                android:background="@color/right"
+                android:onClick="mid1atk1"
+                android:src="@drawable/volleyatk" />
+
+            <ImageButton
+                android:id="@+id/mid1atk0"
+                style="@style/button"
+                android:layout_below="@id/mid1atk1"
+                android:layout_toStartOf="@id/mid1def0"
+                android:background="@color/wrong"
+                android:onClick="mid1atk0"
+                android:src="@drawable/volleyatk" />
+
+            <ImageButton
+                android:id="@+id/mid1def1"
+                style="@style/button"
+                android:layout_toStartOf="@id/mid1pas0"
+                android:background="@color/right"
+                android:onClick="mid1def1"
+                android:src="@drawable/volleydef" />
+
+            <ImageButton
+                android:id="@+id/mid1def0"
+                style="@style/button"
+                android:layout_below="@id/mid1def1"
+                android:layout_toStartOf="@id/mid1pas0"
+                android:background="@color/wrong"
+                android:src="@drawable/volleydef" />
+
+            <ImageButton
+                android:id="@+id/mid1pas1"
+                style="@style/button"
+                android:layout_alignParentEnd="true"
+                android:background="@color/right"
+                android:onClick="mid1pas1"
+                android:src="@drawable/volleypass" />
+
+            <ImageButton
+                android:id="@+id/mid1pas0"
+                style="@style/button"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/mid1pas1"
+                android:background="@color/wrong"
+                android:onClick="mid1pas0"
+                android:src="@drawable/volleypass" />
+
+        </RelativeLayout>
+
+        <!--setter 2-->
+
+        <RelativeLayout
+            android:id="@+id/setter2"
+            style="@style/playerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/roleSetter2"
+                style="@style/player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/set2point"
+                android:text="@string/setter2"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/setter2Name"
+                style="@style/player"
+                android:layout_below="@id/roleSetter2"
+                android:layout_toStartOf="@id/set2point"
+
+                android:hint="@string/player" />
+
+
+            <TextView
+                android:id="@+id/set2point"
+                style="@style/statText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/set2srv1"
+                android:gravity="center" />
+
+
+            <ImageButton
+                android:id="@+id/set2srv1"
+                style="@style/button"
+                android:layout_toStartOf="@id/set2atk1"
+                android:background="@color/right"
+                android:onClick="set2srv1"
+                android:src="@drawable/volleysrv" />
+
+            <ImageButton
+                android:id="@+id/set2srv0"
+                style="@style/button"
+                android:layout_below="@id/set2srv1"
+                android:layout_toStartOf="@id/set2atk0"
+                android:background="@color/wrong"
+                android:onClick="set2srv0"
+                android:src="@drawable/volleysrv" />
+
+            <ImageButton
+                android:id="@+id/set2atk1"
+                style="@style/button"
+                android:layout_toStartOf="@id/set2def1"
+                android:background="@color/right"
+                android:src="@drawable/volleyatk" />
+
+            <ImageButton
+                android:id="@+id/set2atk0"
+                style="@style/button"
+                android:layout_below="@id/set2atk1"
+                android:layout_toStartOf="@id/set2def0"
+                android:background="@color/wrong"
+                android:src="@drawable/volleyatk" />
+
+            <ImageButton
+                android:id="@+id/set2def1"
+                style="@style/button"
+                android:layout_toStartOf="@id/set2pas0"
+                android:background="@color/right"
+                android:src="@drawable/volleydef" />
+
+            <ImageButton
+                android:id="@+id/set2def0"
+                style="@style/button"
+                android:layout_below="@id/set2def1"
+                android:layout_toStartOf="@id/set2pas0"
+                android:background="@color/wrong"
+                android:src="@drawable/volleydef" />
+
+            <ImageButton
+                android:id="@+id/set2pas1"
+                style="@style/button"
+                android:layout_alignParentEnd="true"
+                android:background="@color/right"
+                android:src="@drawable/volleypass" />
+
+            <ImageButton
+                android:id="@+id/set2pas0"
+                style="@style/button"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/set2pas1"
+                android:background="@color/wrong"
+                android:src="@drawable/volleypass" />
+
+        </RelativeLayout>
+
+        <!--hitter 2-->
+
+        <RelativeLayout
+            android:id="@+id/hitter2"
+            style="@style/playerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rolehitter2"
+                style="@style/player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/hit2point"
+                android:text="@string/hitter2"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/hitter2Name"
+                style="@style/player"
+                android:layout_below="@id/rolehitter2"
+                android:layout_marginEnd="@dimen/topBarSpace"
+                android:layout_marginStart="@dimen/topBarSpace"
+                android:layout_toStartOf="@id/hit2point"
+                android:hint="@string/player" />
+
+
+            <TextView
+                android:id="@+id/hit2point"
+                style="@style/statText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/hit2srv1"
+                android:gravity="center" />
+
+
+            <ImageButton
+                android:id="@+id/hit2srv1"
+                style="@style/button"
+                android:layout_toStartOf="@id/hit2atk1"
+                android:background="@color/right"
+                android:onClick="hit2srv1"
+                android:src="@drawable/volleysrv" />
+
+            <ImageButton
+                android:id="@+id/hit2srv0"
+                style="@style/button"
+                android:layout_below="@id/hit2srv1"
+                android:layout_toStartOf="@id/hit2atk0"
+                android:background="@color/wrong"
+                android:onClick="hit2srv0"
+                android:src="@drawable/volleysrv" />
+
+            <ImageButton
+                android:id="@+id/hit2atk1"
+                style="@style/button"
+                android:layout_toStartOf="@id/hit2def1"
+                android:background="@color/right"
+                android:onClick="hit2atk1"
+                android:src="@drawable/volleyatk" />
+
+            <ImageButton
+                android:id="@+id/hit2atk0"
+                style="@style/button"
+                android:layout_below="@id/hit2atk1"
+                android:layout_toStartOf="@id/hit2def0"
+                android:background="@color/wrong"
+                android:onClick="hit2atk0"
+                android:src="@drawable/volleyatk" />
+
+            <ImageButton
+                android:id="@+id/hit2def1"
+                style="@style/button"
+                android:layout_toStartOf="@id/hit2pas0"
+                android:background="@color/right"
+                android:onClick="hit2def1"
+                android:src="@drawable/volleydef" />
+
+            <ImageButton
+                android:id="@+id/hit2def0"
+                style="@style/button"
+                android:layout_below="@id/hit2def1"
+                android:layout_toStartOf="@id/hit2pas0"
+                android:background="@color/wrong"
+                android:onClick="hit2def0"
+                android:src="@drawable/volleydef" />
+
+            <ImageButton
+                android:id="@+id/hit2pas1"
+                style="@style/button"
+                android:layout_alignParentEnd="true"
+                android:background="@color/right"
+                android:onClick="hit2pas1"
+                android:src="@drawable/volleypass" />
+
+            <ImageButton
+                android:id="@+id/hit2pas0"
+                style="@style/button"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/hit2pas1"
+                android:background="@color/wrong"
+                android:onClick="hit2pas0"
+                android:src="@drawable/volleypass" />
+
+        </RelativeLayout>
+
+        <!--middle 2-->
+        <RelativeLayout
+            android:id="@+id/middle2"
+            style="@style/playerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rolemiddle2"
+                style="@style/player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/mid2point"
+                android:text="@string/middle2"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/middle2Name"
+                style="@style/player"
+                android:layout_below="@id/rolemiddle2"
+                android:layout_marginEnd="@dimen/topBarSpace"
+                android:layout_marginStart="@dimen/topBarSpace"
+                android:layout_toStartOf="@id/mid2point"
+                android:hint="@string/player" />
+
+
+            <TextView
+                android:id="@+id/mid2point"
+                style="@style/statText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/mid2srv1"
+                android:gravity="center" />
+
+
+            <ImageButton
+                android:id="@+id/mid2srv1"
+                style="@style/button"
+                android:layout_toStartOf="@id/mid2atk1"
+                android:background="@color/right"
+                android:onClick="mid2srv1"
+                android:src="@drawable/volleysrv" />
+
+            <ImageButton
+                android:id="@+id/mid2srv0"
+                style="@style/button"
+                android:layout_below="@id/mid2srv1"
+                android:layout_toStartOf="@id/mid2atk0"
+                android:background="@color/wrong"
+                android:onClick="mid2srv0"
+                android:src="@drawable/volleysrv" />
+
+            <ImageButton
+                android:id="@+id/mid2atk1"
+                style="@style/button"
+                android:layout_toStartOf="@id/mid2def1"
+                android:background="@color/right"
+                android:onClick="mid2atk1"
+                android:src="@drawable/volleyatk" />
+
+            <ImageButton
+                android:id="@+id/mid2atk0"
+                style="@style/button"
+                android:layout_below="@id/mid2atk1"
+                android:layout_toStartOf="@id/mid2def0"
+                android:background="@color/wrong"
+                android:onClick="mid2atk0"
+                android:src="@drawable/volleyatk" />
+
+            <ImageButton
+                android:id="@+id/mid2def1"
+                style="@style/button"
+                android:layout_toStartOf="@id/mid2pas0"
+                android:background="@color/right"
+                android:onClick="mid2def1"
+                android:src="@drawable/volleydef" />
+
+            <ImageButton
+                android:id="@+id/mid2def0"
+                style="@style/button"
+                android:layout_below="@id/mid2def1"
+                android:layout_toStartOf="@id/mid2pas0"
+                android:background="@color/wrong"
+                android:onClick="mid2def0"
+                android:src="@drawable/volleydef" />
+
+            <ImageButton
+                android:id="@+id/mid2pas1"
+                style="@style/button"
+                android:layout_alignParentEnd="true"
+                android:background="@color/right"
+                android:onClick="mid2pas1"
+                android:src="@drawable/volleypass" />
+
+            <ImageButton
+                android:id="@+id/mid2pas0"
+                style="@style/button"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/mid2pas1"
+                android:background="@color/wrong"
+                android:onClick="mid2pas0"
+                android:src="@drawable/volleypass" />
+
+        </RelativeLayout>
+
+        <!--libero-->
+
+        <RelativeLayout
+            android:id="@+id/libero"
+            style="@style/playerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rolelibero"
+                style="@style/player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/libpoint"
+                android:text="@string/libero"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/liberoName"
+                style="@style/player"
+                android:layout_below="@id/rolelibero"
+                android:layout_marginEnd="@dimen/topBarSpace"
+                android:layout_marginStart="@dimen/topBarSpace"
+                android:layout_toStartOf="@id/libpoint"
+                android:hint="@string/player" />
+
+
+            <TextView
+                android:id="@+id/libpoint"
+                style="@style/statText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/libsrv1"
+                android:gravity="center_vertical" />
+
+
+            <ImageButton
+                android:id="@+id/libsrv1"
+                style="@style/button"
+                android:layout_alignTop="@+id/libatk1"
+                android:layout_toStartOf="@+id/libatk1"
+                android:background="@color/backPlayer" />
+
+            <ImageButton
+                android:id="@+id/libsrv0"
+                style="@style/button"
+                android:layout_below="@id/libsrv1"
+                android:layout_toStartOf="@id/libatk0"
+                android:background="@color/backPlayer" />
+
+            <ImageButton
+                android:id="@+id/libatk1"
+                style="@style/button"
+                android:layout_toStartOf="@id/libdef1"
+                android:background="@color/backPlayer" />
+
+            <ImageButton
+                android:id="@+id/libatk0"
+                style="@style/button"
+                android:layout_below="@id/libatk1"
+                android:layout_toStartOf="@id/libdef0"
+                android:background="@color/backPlayer" />
+
+            <ImageButton
+                android:id="@+id/libdef1"
+                style="@style/button"
+                android:layout_toStartOf="@id/libpas0"
+                android:background="@color/right"
+                android:onClick="libdef1"
+                android:src="@drawable/volleydef" />
+
+            <ImageButton
+                android:id="@+id/libdef0"
+                style="@style/button"
+                android:layout_below="@id/libdef1"
+                android:layout_toStartOf="@id/libpas0"
+                android:background="@color/wrong"
+                android:onClick="libdef0"
+                android:src="@drawable/volleydef" />
+
+            <ImageButton
+                android:id="@+id/libpas1"
+                style="@style/button"
+                android:layout_alignParentEnd="true"
+                android:background="@color/right"
+                android:onClick="libpas1"
+                android:src="@drawable/volleypass" />
+
+            <ImageButton
+                android:id="@+id/libpas0"
+                style="@style/button"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/libpas1"
+                android:background="@color/wrong"
+                android:onClick="libpas0"
+                android:src="@drawable/volleypass" />
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backPlayer"
+            android:text="reset"
+            android:onClick="reset"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
